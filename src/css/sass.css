@@ -257,4 +257,38 @@ header {
   width: 60%;
 }
 
+.opportunities {
+  padding-top: 55px;
+  background-color: #070716;
+}
+.opportunities_blue {
+  height: 500px;
+  text-align: center;
+}
+.opportunities_blue .label {
+  background-color: #ffffff;
+  color: #000000;
+}
+.opportunities_blue .title, .opportunities_blue .subtitle {
+  color: #ffffff;
+}
+.opportunities_blue .opportunities_img {
+  display: block;
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+}
+.opportunities_white {
+  min-height: 500px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.opportunities_white_text {
+  padding-top: 217px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222222;
+}
+
 /*# sourceMappingURL=sass.css.map */

@@ -1,3 +1,6 @@
+$color_blue: #1eacc7
+$color_red: #ff5656
+
 *
   font-family: Roboto
 header
@@ -49,7 +52,7 @@ header
   .header_btn
     width: 178px
     height: 52px
-    background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+    background-image: linear-gradient(0deg, $color_blue 0%, #4ce2ff 100%)
     border: none
     border-radius: 4px
     box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11)
@@ -84,7 +87,7 @@ header
   width: 265px
   height: 69px
   margin: 109px auto 127px auto
-  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+  background-image: linear-gradient(0deg, $color_blue 0%, #4ce2ff 100%)
   border: none
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.11)
   font-size: 18px
@@ -131,7 +134,7 @@ header
     width: 113px
     height: 113px
     margin: 0 auto
-    background-color: #1eacc7
+    background-color: $color_blue
     border-radius: 100%
   .reason_text
     font-size: 15px
@@ -141,7 +144,7 @@ header
       font-size: 17px
       line-height: 21px
       font-weight: 400
-      color: #1eacc7
+      color: $color_blue
 .mobile
   min-height: 864px
   padding: 48px 0 79px 0
@@ -188,4 +191,32 @@ header
       img
         display: block
         width: 60%
+.opportunities
+  padding-top: 55px    
+  background-color: #070716
+  &_blue
+    height: 500px
+    text-align: center
+    .label
+      background-color:  #ffffff
+      color: #000000
+    .title,.subtitle
+      color: #ffffff
+    .opportunities_img
+      display: block
+      position: relative
+      top: 70px
+      margin: 0 auto
+  &_white
+    min-height: 500px
+    text-align: center
+    background-color:  #ffffff
+    &_text
+      padding-top: 217px
+      font-size: 17px
+      line-height: 24px
+      font-weight: 300
+      color: #222222
+
+
        
