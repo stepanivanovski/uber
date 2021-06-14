@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -17,12 +18,17 @@
       <div class="container">
         <ul class="menu">
           <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-          <li class="menu_item"><a href="#" class="menu_link">Требования </a></li>
+          <li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
+          <li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
+          <li class="menu_item"><a href="#require" class="menu_link">Требования </a></li>
           <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
           <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
         </ul>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   </header>
@@ -30,15 +36,16 @@
     <div class="subheader">
       <div class="container">
         <div class="row"> 
-          <div class="col-md-4 offset-md-1">
-            <a href="#"><img class = "subheader_logo" src="icons/logo.png" alt="logo"></a>            
+          <div class="col-6 col-md-4 offset-md-1">
+            <a href="#" class = "subheader_logo"><img class = "subheader_logo" src="icons/logo.png" alt="logo"></a>            
             <div class = "subheader_text">Официальный партнер Uber в Москве</div>
           </div>
-          <div class="col-md-2 offset-md-2">
+          <div class="xs_hidden col-6 col-md-3 offset-md-1 col-xl-2 offset-xl-2">
             <div class="subheader_notification">Звоните нам ежедневно</div>
             <a href = "tel:84957970988" class="subheader_phone">8 495 797-09-88</a>
           </div>
-          <div class="col-md-2">
+          <div class="col-6 col-md-3 col-lg-2">
+            <a href = "tel:84957970988" class="subheader_phone subheader_phone_xs_visible">8 495 797-09-88</a>
             <button class = "header_btn">заказать звонок</button>
           </div>
         </div>
@@ -46,7 +53,7 @@
     </div> 
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
           <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
           <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
           <div class="promo_text">Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее место среди
@@ -65,93 +72,93 @@
       <h2 class="title">8 причин начать работать с нами</h2>
     </div>
     <div class = "container">
-      <div class="row mt-5 px-4">
-        <div class="col-md-2">
+      <div class="row">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/1.png" alt="" class="reson_img">
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Никаких наличных, оплата происходит
             автоматически</span><br>
             Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/2.png" alt="" class="reson_img">
           </div>
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Высокий доход с гарантированными
             выплатами</span><br>
             Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.
           </div>
         </div>
       </div>
-      <div class="row mt-4 px-4">
-        <div class="col-md-2">
+      <div class="row mt-4">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/3.png" alt="" class="reson_img">
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Комфортное, прозрачное и простое
             подключение</span><br>
             Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/4.png" alt="" class="reson_img">
           </div>
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Круглосуточная поддержка</span><br>
             В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.
           </div>
         </div>
       </div>
-      <div class="row mt-4 px-4">
-        <div class="col-md-2">
+      <div class="row mt-4">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/5.png" alt="" class="reson_img">
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Комиссия 8% + БОНУСЫ</span><br>
             У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/6.png" alt="" class="reson_img">
           </div>
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Работа в удобное время, никаких
             графиков</span><br>
             Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!
           </div>
         </div>
       </div>
-      <div class="row mt-4 px-4">
-        <div class="col-md-2">
+      <div class="row mt-4">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/7.png" alt="" class="reson_img">
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Всегда большое количество заказов</span><br>
             Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить..
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4 col-lg-2 mt-4">
           <div class="reason_round">
             <img src="./icons/advantages/8.png" alt="" class="reson_img">
           </div>
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-8 col-lg-4 mt-4">
           <div class="reason_text"><span>Без шашечек и наклеек</span><br>
             Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.
           </div>
@@ -167,37 +174,37 @@
       <div class="title">мобильное приложение убер</div>
       <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
       <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class = "mobile_item mobile_item_1">
           <div class="mobile_item_subtitle">оформление заказа одним касанием</div>
           <div class="mobile_item_plus"></div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class = "mobile_item mobile_item_2">
           <div class="mobile_item_subtitle">надежная подача</div>
           <div class="mobile_item_plus"></div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class = "mobile_item mobile_item_3">
           <div class="mobile_item_subtitle">прозрачные цены </div>
           <div class="mobile_item_plus"></div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class = "mobile_item mobile_item_4">
           <div class="mobile_item_subtitle">безналичная оплата</div>
           <div class="mobile_item_plus"></div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class = "mobile_item mobile_item_5">
           <div class="mobile_item_subtitle">обратная связь</div>
           <div class="mobile_item_plus"></div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class = "mobile_item mobile_item_6">
           <div class="mobile_item_subtitle">разделить стоимость поездки</div>
           <div class="mobile_item_plus"></div>
@@ -214,13 +221,15 @@
       <div class="title">мобильное приложение убер</div>
       <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</div>
       <img src="img/opportunities/car.png" alt="car" class="opportunities_img">
+      <div class="text-visible opportunities_white_text">Машины на каждый день. <br> Лучше, быстрее и дешевле, чем такси
+      </div>    
     </div>
     <div class="opportunities_white">
       <div class="opportunities_white_text">Машины на каждый день. <br> Лучше, быстрее и дешевле, чем такси
       </div>     
     </div>
   </section>
-  <section class = "require">
+  <section class = "require" id = "require">
     <div class="label">
       возможности
     </div>
@@ -282,7 +291,7 @@
     </div>
   </section>
   <section class="cities">
-    <div class="label">ё
+    <div class="label">
       города
     </div>
     <div class="title">По всему миру</div>
@@ -344,5 +353,6 @@
       
     </div>
 </footer>
+<script src = "js/script.js"></script>
 </body>
 </html>
