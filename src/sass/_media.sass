@@ -29,9 +29,9 @@
     position: static
   .title
     font-size: 35px
-  .subtitle
-    font-size: 17px
+  .subtitle    
     padding: 0 20px
+    font-size: 17px
   .promo
     padding-top: 0
   .menu
@@ -47,9 +47,9 @@
       display: block
       width: 100%
     &_text
+      text-align: left
       font-size: 10px
       line-height: 23px
-      text-align: left
     &_phone
       font-size: 21px
   .promo
@@ -84,8 +84,8 @@
         &_lang
           margin-top: 10px
       &_social
-        width: 100%
         justify-content: center
+        width: 100%
         padding-top: 10px
       &_mobile
         padding-top: 10px
@@ -94,33 +94,33 @@
     position: fixed
     height: 30px
   .menu
-    flex-direction: column  
-    justify-content: center
-    align-items: center  
     position: fixed
     top: 0
-    left: -100%    
+    left: -100%
+    z-index: 1    
     width: 50%
     height: 100vh
     padding: 20px 15px
-    z-index: 1
+    flex-direction: column  
+    justify-content: center
+    align-items: center  
     background-color: rgba(0, 0, 0, .8)
     transition: 0.6s all    
     &_active
       left: 0
     &_item
+      margin: 10px 0
       padding-right: 0
       border: 0
-      margin: 10px 0
     &_link
       font-size: 18px
   .hamburger
-    width: 20px
-    height: 15px
     position: absolute
     right: 10px
     top: 50%
     transform: translateY(-50%)
+    width: 20px
+    height: 15px
     span
       display: block
       height: 2px
@@ -130,33 +130,33 @@
     &_active
       span
         &:nth-child(1)
-          transform: rotate(-45deg) translate(-0.5px, 1px)
           margin: 0
+          transform: rotate(-45deg) translate(-0.5px, 1px)
         &:nth-child(2)
           display: none
         &:nth-child(3)
-          transform: rotate(45deg) translateY(-1px)
           margin: 0
+          transform: rotate(45deg) translateY(-1px)
   .promo
+    min-height: 550px 
     padding-top: 50px
-    min-height: 550px   
     &_text
       display: none
     &_btn
-      border-radius: 4px
       margin-bottom: 50px
+      border-radius: 4px
       &:hover
         background-image: linear-gradient(0deg, $color_blue 0%, #4ce2ff 100%)
     &_subheader
-      line-height: 40px
       padding-top: 10px
+      line-height: 40px
   .subheader
     padding: 5px
     &_logo
       padding-top: 9px
     &_phone
-      font-size: 14px
       text-align: center
+      font-size: 14px
       &_xs_visible
         display: block
     .xs_hidden
@@ -184,8 +184,8 @@
     &_img
       position: static
       left: 100%
-      margin: 20px auto 0 auto
       width: 75%
+      margin: 20px auto 0 auto
   .require
     padding-top: 0px
     &_block
@@ -290,7 +290,6 @@
     &_descr
       font-size: 14px
       line-height: 17px
-
   .cities
     min-height: 360px
     padding: 30px 0 0 0
